@@ -4,20 +4,18 @@
 @import helpers
 @import normalize
 
+$content-space: 2rem
     
 body
-    color: $black
+    background:$turquoise
+    color: $purple
     font-size: 16px
     position: static
     max-width: 100%
     line-height: 1.5
-    overflow-y: auto
     -webkit-font-smoothing: antialiased
     -moz-osx-font-smoothing: antialiased
-    overflow-x: hidden
     +noto-light
-    padding: 10em
-
 
 h1, h2, h3, h4, h5, h6
     font-weight: normal
@@ -31,36 +29,44 @@ h1
     font-size: 3rem
 h2
     +noto-regular
-    font-size: 2rem
+    font-size: $content-space
 h3
     +noto-regular
     font-size: 1.5rem
 p
     +noto-light
     font-size: 1rem
-    text-align: justify
-.site-title
-    font-size: 7.5em
-    +noto-bold
-    display: inline-block
-    margin: 0 auto .5em auto
 
+footer
+    text-align: center
+    width: 100%
+    margin: $content-space 0
+    display: flex
+    justify-content: center
+    align-items: center
+    .copyright
+        margin: 0 $content-space
+.logo
+    max-width: 3rem
+.container
+    padding: 10em 10em 0 10em
+    overflow-y: auto
+    overflow-x: hidden
 .content
     width: 100%
     max-width: 100%
     position: relative
+.section-title
+    font-size: 7.5em
+    +noto-bold
+    display: inline-block
+    margin: 0 auto .5em auto
 .section
     margin-bottom: 5rem
-
 .box-style
-    border: .75rem solid black
+    border: .75rem solid $purple
     padding: 1rem 2rem
     box-shadow: -.5rem .5rem
 
 .text-box
     max-width: 32em
-
-.right
-    float: right
-    &.box-style
-        box-shadow: .5rem .5rem

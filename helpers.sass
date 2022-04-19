@@ -6,9 +6,78 @@
 
 $white: #fff
 $black: #000
+$turquoise:#6DD3CE
+$green: #C8E9A0
+$salmon:#F7A278
+$maroon: #A13D63
+$purple: #351E29
 
 $content-space: 2rem
 
+.turquoise
+    color: $turquoise !important
+    .box-style
+        border-color: $turquoise !important
+
+.green
+    color: $green !important
+    .box-style
+        border-color: $green !important
+
+.salmon
+    color: $salmon !important
+    .box-style
+        border-color: $salmon !important
+
+.maroon
+    color: $maroon !important
+    .box-style
+        border-color: $maroon !important
+
+.purple
+    color: $purple !important
+    .box-style
+        border-color: $purple !important
+
+
+.align-right
+    text-align: -webkit-right
+    text-align: -moz-right
+    text-align: -o-right
+    text-align: -ms-right
+    &.box-style
+        box-shadow: .5rem .5rem
+
+// animations
+
+.slide-in-left
+  animation-duration: 1s
+  animation-name: fadeInLeft
+  transition-timing-function: ease-out
+
+@keyframes fadeInLeft
+   0% 
+      opacity: 0
+      transform: translateX(-20px)
+   
+   100% 
+      opacity: 1
+      transform: translateX(0)
+   
+.slide-in-right
+  animation-duration: 1s
+  animation-name: fadeInRight
+  transition-timing-function: ease-out
+
+@keyframes fadeInRight
+   0% 
+      opacity: 0
+      transform: translateX(20px)
+   
+   100% 
+      opacity: 1
+      transform: translateX(0)
+   
 
 // Fonts //
 

@@ -1,3 +1,117 @@
+.turquoise {
+  color: #6DD3CE !important;
+}
+.turquoise .box-style {
+  border-color: #6DD3CE !important;
+}
+
+.green {
+  color: #C8E9A0 !important;
+}
+.green .box-style {
+  border-color: #C8E9A0 !important;
+}
+
+.salmon {
+  color: #F7A278 !important;
+}
+.salmon .box-style {
+  border-color: #F7A278 !important;
+}
+
+.maroon {
+  color: #A13D63 !important;
+}
+.maroon .box-style {
+  border-color: #A13D63 !important;
+}
+
+.purple {
+  color: #351E29 !important;
+}
+.purple .box-style {
+  border-color: #351E29 !important;
+}
+
+.align-right {
+  text-align: -webkit-right;
+  text-align: -moz-right;
+  text-align: -o-right;
+  text-align: -ms-right;
+}
+.align-right.box-style {
+  -webkit-box-shadow: 0.5rem 0.5rem;
+          box-shadow: 0.5rem 0.5rem;
+}
+
+.slide-in-left {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-name: fadeInLeft;
+          animation-name: fadeInLeft;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+}
+
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+.slide-in-right {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-name: fadeInRight;
+          animation-name: fadeInRight;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+}
+
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(20px);
+            transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(20px);
+            transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -187,20 +301,18 @@ td, th {
 }
 
 body {
-  color: #000;
+  background: #6DD3CE;
+  color: #351E29;
   font-size: 16px;
   position: static;
   max-width: 100%;
   line-height: 1.5;
-  overflow-y: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: antialiased;
-  overflow-x: hidden;
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 300;
   font-style: normal;
   font-stretch: normal;
-  padding: 10em;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -243,10 +355,43 @@ p {
   font-style: normal;
   font-stretch: normal;
   font-size: 1rem;
-  text-align: justify;
 }
 
-.site-title {
+footer {
+  text-align: center;
+  width: 100%;
+  margin: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .copyright {
+  margin: 0 2rem;
+}
+
+.logo {
+  max-width: 3rem;
+}
+
+.container {
+  padding: 10em 10em 0 10em;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.content {
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+}
+
+.section-title {
   font-size: 7.5em;
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 700;
@@ -256,18 +401,12 @@ p {
   margin: 0 auto 0.5em auto;
 }
 
-.content {
-  width: 100%;
-  max-width: 100%;
-  position: relative;
-}
-
 .section {
   margin-bottom: 5rem;
 }
 
 .box-style {
-  border: 0.75rem solid black;
+  border: 0.75rem solid #351E29;
   padding: 1rem 2rem;
   -webkit-box-shadow: -0.5rem 0.5rem;
           box-shadow: -0.5rem 0.5rem;
@@ -275,12 +414,4 @@ p {
 
 .text-box {
   max-width: 32em;
-}
-
-.right {
-  float: right;
-}
-.right.box-style {
-  -webkit-box-shadow: 0.5rem 0.5rem;
-          box-shadow: 0.5rem 0.5rem;
 }
